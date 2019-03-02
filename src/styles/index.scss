@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+.clear-both {
+  clear: both;
+}
+
+//input
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+//custom bootstrap
+@media only screen and (max-width: 575px) {
+  .col-xs-9 {
+    width: 75%;
+  }
+
+  .col-xs-3 {
+    width: 25%;
+  }
+}

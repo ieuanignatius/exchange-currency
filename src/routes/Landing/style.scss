@@ -1,0 +1,59 @@
+@import '../../styles/colors';
+
+.landing-page {
+  .card {
+    border: 1px solid $color-border;
+    
+    .card-header {
+      .base-currency-container {
+        margin-top: 10px;
+
+        .currency-code {
+          line-height: 26px;
+          vertical-align: middle;
+        }
+
+        .currency-value {
+          border: 1px solid $color-input-border;
+        }
+      }
+    }
+
+    .card-header, .card-body {
+      font-weight: 600;
+
+      .currency-tag {
+        font-size: 10px;
+        font-style: italic;
+      }
+
+      .currency-code {
+        float: left;
+      }
+
+      .currency-value {
+        float: right;
+        outline: none;
+      }
+    }
+
+    .card-header, .card-footer {
+      background-color: transparent;
+    }
+
+    .card-footer {
+      border-top: none;
+      padding-top: 2px;
+
+      .row {
+        >div {
+          margin-top: 10px;
+        }
+      }
+
+      .new-currency-submit-btn {
+        width: 100%;
+      }
+    }
+  }
+}

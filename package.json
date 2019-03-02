@@ -1,0 +1,104 @@
+{
+  "name": "exchange-currency",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Ieuan Ignatius - ieuan.ignatius@hotmail.com",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/tests/",
+      "<rootDir>/src/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/tests/",
+      "<rootDir>/src/*.js"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss)$": "jest-transform-css"
+    },
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!tix-react-ui)"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/build/"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{jsx}",
+      "src/**/**/*.{jsx}"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "verbose": true,
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "dotenv": "^6.2.0",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
+    "promise": "^8.0.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-router": "^4.3.1",
+    "react-router-config": "^4.4.0-beta.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "react-select": "^2.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-imports": "^1.5.1",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.15.0",
+    "eslint-config-react-app": "^3.0.7",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-flowtype": "^2.50.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^23.6.0",
+    "jest-transform-css": "^2.0.0",
+    "jest-transform-graphql": "^2.1.0",
+    "prop-types": "^15.7.2",
+    "react-hot-loader": "^4.7.1",
+    "react-test-renderer": "^16.8.3",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.2",
+    "stylelint-scss": "^3.5.4",
+    "stylint": "^1.5.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --silent --coverage",
+    "eject": "react-scripts eject"
+  }
+}

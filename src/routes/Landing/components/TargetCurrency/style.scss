@@ -1,0 +1,32 @@
+@import '../../../../styles/colors';
+
+.target-currency-card {
+  border: 1px solid $color-border;
+
+  .target-currency-container {
+    border-right: 1px solid $color-border;
+    padding: 0 5px;
+
+    p {
+      font-weight: normal;
+    }
+
+    .currency-tag {
+      font-weight: 600;
+    }
+
+    .currency-equality {
+      font-weight: normal;
+      font-size: 12px;
+    }
+  }
+  
+  .target-currency-btn-container {
+    text-align: center;
+    align-self: center;
+  }
+
+  +.target-currency-card {
+    margin-top: 15px;
+  }
+}
